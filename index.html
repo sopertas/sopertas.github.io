@@ -1,44 +1,58 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sefa A. — Apps</title>
+<title>WhiteSun</title>
+<meta name="description" content="WhiteSun makes focused mobile apps for learning and practice: SceneWise and Aim Trainer: FPS Warm Up.">
+<link rel="icon" href="whitesun-icon.png">
 <style>
-  :root { color-scheme: light dark; --bg: #fafafa; --text: #1b1b1f; --muted: #5f6068; --card: #fff; --line: #e3e3e8; --link: #1a5fd0; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #121216; --text: #ececf1; --muted: #a2a3ad; --card: #1c1c22; --line: #2c2c34; --link: #8ab4ff; } }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 640px; margin: 0 auto; padding: 40px 16px; }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  p.lead { color: var(--muted); margin: 0 0 28px; }
-  .app { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-bottom: 14px; }
-  .app h2 { font-size: 18px; margin: 0 0 6px; }
+  :root { color-scheme: light dark; --bg: #f7f7f9; --text: #15171c; --muted: #5d606b; --card: #fff; --line: #e4e5ea; --link: #1a5fd0; --accent: #e8901a; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d1015; --text: #eceef3; --muted: #a0a5b2; --card: #161a22; --line: #262b36; --link: #8ab4ff; --accent: #ffb648; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 40px; }
+  .brand { font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 10px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 14px; }
+  p.lead { color: var(--muted); margin: 0 0 40px; max-width: 600px; }
+  .app { display: flex; gap: 18px; align-items: flex-start; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px; margin-bottom: 16px; }
+  .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .app .ph { width: 72px; height: 72px; border-radius: 16px; flex: none; background: linear-gradient(#1b2234, #0b0e16); display: grid; place-items: center; color: var(--accent); font-weight: 800; font-size: 26px; }
+  .app h2 { font-size: 19px; margin: 2px 0 6px; }
   .app p { margin: 0 0 10px; color: var(--muted); }
-  a { color: var(--link); text-decoration: none; margin-right: 16px; }
+  a { color: var(--link); text-decoration: none; margin-right: 18px; font-weight: 600; }
   a:hover { text-decoration: underline; }
-  footer { color: var(--muted); font-size: 14px; margin-top: 28px; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 36px; border-top: 1px solid var(--line); padding-top: 18px; }
+  @media (max-width: 480px) { .app { flex-direction: column; } h1 { font-size: 28px; } }
 </style>
 </head>
 <body>
 <main>
-  <h1>Sefa A.</h1>
-  <p class="lead">Independent developer of Android apps.</p>
+  <p class="brand">WhiteSun</p>
+  <h1>Focused apps for learning and practice.</h1>
+  <p class="lead">We build small, carefully made mobile apps that help you get better at one thing, a few minutes a day. No accounts, no clutter, and your progress stays on your device.</p>
 
   <section class="app">
-    <h2>SceneWise: English with Movies</h2>
-    <p>Learn every English word and phrase of the movies and TV series you love, so you can watch without subtitles.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.sefaa.scenewise">Google Play</a>
-    <a href="https://docs.google.com/document/d/e/2PACX-1vQo6ORAvmllZv_y3N8_W40BDbOC7cRmDmU9QNGicY1lpks4mKuw7_HHgekoqmdu8PVly5-ZBSXYIww2/pub">Privacy policy</a>
+    <img src="scenewise-icon.png" alt="SceneWise icon">
+    <div>
+      <h2>SceneWise: English with Movies</h2>
+      <p>Learn every English word and phrase of the movie or TV episode you are about to watch, at your own level (A1–C2), then watch without subtitles.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.sefaa.scenewise">Google Play</a>
+      <a href="https://docs.google.com/document/d/e/2PACX-1vQo6ORAvmllZv_y3N8_W40BDbOC7cRmDmU9QNGicY1lpks4mKuw7_HHgekoqmdu8PVly5-ZBSXYIww2/pub">Privacy policy</a>
+    </div>
   </section>
 
   <section class="app">
-    <h2>Aim Trainer: FPS Warm Up</h2>
-    <p>Short daily aim warm-ups and training levels for FPS players.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.sefaa.fpswarmup">Google Play</a>
-    <a href="https://docs.google.com/document/d/e/2PACX-1vScSk2gOoeRQuORfIzxOgzDo6NJRLFHelzieL5EH52y9btH_E26jWAu26J92mfHkHL2WFtDjCuo3nRa/pub">Privacy policy</a>
+    <div class="ph">A</div>
+    <div>
+      <h2>Aim Trainer: FPS Warm Up</h2>
+      <p>Short daily aim warm-ups and training levels for FPS players.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.sefaa.fpswarmup">Google Play</a>
+      <a href="https://docs.google.com/document/d/e/2PACX-1vScSk2gOoeRQuORfIzxOgzDo6NJRLFHelzieL5EH52y9btH_E26jWAu26J92mfHkHL2WFtDjCuo3nRa/pub">Privacy policy</a>
+    </div>
   </section>
 
-  <footer>Contact: <a href="mailto:sefa.akg@gmail.com">sefa.akg@gmail.com</a></footer>
+  <footer>© 2026 WhiteSun · Contact: <a href="mailto:sefa.akg@gmail.com">sefa.akg@gmail.com</a></footer>
 </main>
 </body>
 </html>
