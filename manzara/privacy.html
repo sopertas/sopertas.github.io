@@ -13,7 +13,6 @@
   .brand { font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 10px; }
   h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
   h2 { font-size: 19px; margin: 28px 0 6px; }
-  p, li { color: var(--text); }
   .muted { color: var(--muted); }
   a { color: var(--link); }
   hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
@@ -23,22 +22,31 @@
 <main>
   <p class="brand"><a href="../" style="color:inherit;text-decoration:none">WhiteSun</a></p>
   <h1>Manzara — Privacy Policy</h1>
-  <p class="muted">Last updated: 28 October 2026 · App: Manzara (Android, package com.whitesun.manzara) · Developer: WhiteSun (Sefa Akgüneş)</p>
+  <p class="muted">Last updated: 13 November 2026 · App: Manzara (Android, package com.whitesun.manzara; iPhone, bundle ID com.whitesun.manzara) · Developer: WhiteSun (Sefa Akgüneş)</p>
 
   <h2>Summary</h2>
-  <p>Manzara does not ask for an account, does not collect personal data and does not share or sell any data. The game works fully offline and your progress stays on your device.</p>
+  <p>Manzara does not ask for an account and does not sell your data. Your game progress stays on your device. Starting with version 1.1 the Android version shows ads through Google AdMob, which uses some device data to serve and measure ads, and offers an optional one-time purchase, Premium, that removes the ads. The purchase is handled by Google Play; the game itself only remembers on your device whether you own Premium. Both are described below.</p>
 
   <h2>Data stored on your device</h2>
-  <p>Your best scores, daily map scores, the town you are currently building (so you can continue later), play statistics and your settings (sound, music, vibration, view map, language) are saved only in the app's private storage on your device. This data never leaves your device through the app. It may be included in your device's own backup if you have backup enabled; that backup is handled by Google according to your device settings. Uninstalling the app deletes this data.</p>
+  <p>Your best scores, daily map scores, the town you are currently building (so you can continue later), play statistics and your settings (sound, music, vibration, view map, language) are saved only in the app's private storage on your device. From version 1.1 the Android version also saves there whether you own Premium (a simple yes/no flag) and a few counters used to space out ads (how many games you have finished, how many ads were shown and when the last one closed). This data never leaves your device through the app. It may be included in your device's own backup if you have backup enabled. Uninstalling the app deletes this data.</p>
 
   <h2>Permissions</h2>
-  <p>The app only uses the vibration permission for optional haptic feedback, which you can turn off in the game's settings. It has no internet access and does not access your location, contacts, camera, microphone or files.</p>
+  <p>The Android app uses internet access (only to load ads and to reach Google Play for the Premium purchase), the advertising ID permission (used by Google AdMob), the Google Play billing permission (for the optional Premium purchase) and the vibration permission for optional haptic feedback, which you can turn off in the game's settings. The game itself works offline. It does not access your location, contacts, camera, microphone or files.</p>
 
-  <h2>Ads and third parties</h2>
-  <p>This version contains no ads, no analytics and no third-party SDKs. If a future version adds ads, this policy will be updated before that version is released.</p>
+  <h2>Advertising (Google AdMob, Android)</h2>
+  <p>From version 1.1 the Android game shows a full-screen ad when you leave the end-of-day screen (never during play, not after your first two games, and never less than a minute after the previous ad) and optional rewarded ads that you choose to watch (to continue a day with extra cards, to undo a placement or to get other pack choices). Ads are provided by Google AdMob. To show, personalize (where allowed) and measure ads and to prevent fraud, Google may collect and process your device's advertising ID, IP address, device and app information, and your interactions with ads. In the EEA, the UK and Switzerland you are asked for consent through Google's consent form, and you can change your choice any time with "Privacy options" in the game's settings. You can also reset or delete your advertising ID in your Android settings. Learn how Google uses this data: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+  <p>The game contains no analytics or tracking SDKs other than Google AdMob.</p>
+
+  <h2>Premium purchase (Google Play Billing, Android)</h2>
+  <p>Premium is an optional one-time purchase. With Premium the game shows no full-screen ads, and the extras that otherwise need a rewarded ad (continuing a day, undo, other pack choices) are given without watching one. Premium is sold at its regular price in the game's menu, settings and end-of-day screen, and may also be offered at a lower special-offer price after an ad; both give exactly the same thing, and every price you see is the one Google Play reports for your country.</p>
+  <p>The purchase is processed entirely by Google Play (Google Play Billing). We never receive or store your payment details, name, email address or postal address. To know whether to show ads, the game asks Google Play on your device whether your Google account owns Premium (when the game starts, when you return to it, and when you open the Premium screen or tap "Restore purchases") and stores only a "Premium owned" yes/no flag on your device, so that Premium also works offline. If Google Play later reports that the purchase no longer exists (for example after a refund), the flag is cleared. Google processes your purchase under its own privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Refunds and payment questions are handled by Google Play.</p>
+  <p>Google's advertising software remains part of the app after you buy Premium, but the game no longer shows ads.</p>
+
+  <h2>iPhone (App Store) version</h2>
+  <p>The iPhone version of Manzara currently shows no ads, offers no purchases and contains no advertising, analytics or tracking SDKs. It does not use the internet, does not access the advertising identifier and does not track you. The advertising and Premium sections above apply to the Android version only. If ads or purchases are added to the iPhone version later, this policy will be updated first.</p>
 
   <h2>Children</h2>
-  <p>We do not knowingly collect personal information from anyone, including children.</p>
+  <p>The game is not directed at children under 13 and we do not knowingly collect personal information from children.</p>
 
   <h2>Contact</h2>
   <p>Questions about this policy: <a href="mailto:sefa.akg@gmail.com">sefa.akg@gmail.com</a></p>
@@ -47,11 +55,13 @@
 
   <h1 lang="tr">Gizlilik Politikası (Türkçe)</h1>
   <div lang="tr">
-  <p>Manzara hesap istemez, kişisel veri toplamaz, hiçbir veriyi paylaşmaz veya satmaz. Oyun tamamen internetsiz çalışır; ilerlemen cihazında kalır.</p>
-  <p>En yüksek puanların, günün haritası puanların, kurmakta olduğun kasaba (sonra devam edebilmen için), oyun istatistiklerin ve ayarların (ses, müzik, titreşim, manzara haritası, dil) yalnızca cihazındaki uygulama alanında saklanır. Cihazının yedekleme ayarı açıksa cihaz yedeğine dahil olabilir; uygulamayı kaldırınca silinir.</p>
-  <p>Uygulama yalnızca isteğe bağlı titreşim iznini kullanır (ayarlardan kapatılabilir). İnternet erişimi yoktur; konum, kişiler, kamera, mikrofon veya dosyalarına erişmez.</p>
-  <p>Bu sürümde reklam, analiz veya üçüncü taraf SDK'sı yoktur. İleride reklam eklenirse bu politika o sürüm yayınlanmadan önce güncellenir.</p>
-  <p>Kimseden, çocuklar dahil, bilerek kişisel bilgi toplamayız. İletişim: <a href="mailto:sefa.akg@gmail.com">sefa.akg@gmail.com</a></p>
+  <p>Manzara hesap istemez ve verilerini satmaz; oyun ilerlemen cihazında kalır. 1.1 sürümünden itibaren Android sürümünde Google AdMob reklamları gösterilir ve reklamları kaldıran, isteğe bağlı, tek seferlik bir satın alma (Premium) sunulur. Satın almayı Google Play yürütür; oyun yalnızca Premium'a sahip olup olmadığını cihazında hatırlar.</p>
+  <p>En yüksek puanların, günün haritası puanların, kurmakta olduğun kasaba, oyun istatistiklerin ve ayarların yalnızca cihazındaki uygulama alanında saklanır. 1.1 sürümünden itibaren Android sürümü aynı yerde Premium'a sahip olup olmadığını (basit bir evet/hayır işareti) ve reklamları seyreltmek için kullanılan birkaç sayacı (kaç oyun bitirdiğin, kaç reklam gösterildiği, son reklamın ne zaman kapandığı) da saklar. Bu veriler uygulama üzerinden cihazından çıkmaz; uygulamayı kaldırınca silinir.</p>
+  <p>Android uygulaması internet erişimini (yalnızca reklam yüklemek ve Premium satın alması için Google Play'e ulaşmak üzere), reklam kimliği iznini (Google AdMob), Google Play faturalandırma iznini (isteğe bağlı Premium satın alması için) ve isteğe bağlı titreşim iznini kullanır. Oyunun kendisi internetsiz çalışır. Konum, kişiler, kamera, mikrofon veya dosyalarına erişmez.</p>
+  <p><b>Reklamlar:</b> Gün sonu ekranından çıkarken tam ekran reklam gösterilir (hiçbir zaman oyun sırasında değil, ilk iki oyununda değil ve bir önceki reklamdan en az bir dakika sonra); ayrıca kendi isteğinle izlediğin ödüllü reklamlar vardır (güne ek kartlarla devam etmek, bir yerleştirmeyi geri almak ya da başka paket seçenekleri almak için). Reklamlar Google AdMob tarafından sunulur. Google reklamları göstermek, ölçmek ve dolandırıcılığı önlemek için reklam kimliğini, IP adresini, cihaz ve uygulama bilgilerini ve reklam etkileşimlerini işleyebilir. AEA, Birleşik Krallık ve İsviçre'de onayın sorulur; tercihini ayarlardaki "Gizlilik seçenekleri"nden değiştirebilirsin. Reklam kimliğini Android ayarlarından sıfırlayabilir veya silebilirsin. AdMob dışında analiz veya takip SDK'sı yoktur.</p>
+  <p><b>Premium satın alması:</b> Premium isteğe bağlı, tek seferlik bir satın almadır. Premium ile tam ekran reklam gösterilmez; normalde ödüllü reklam isteyen ekstralar (güne devam, geri alma, başka paket seçenekleri) reklam izlemeden verilir. Premium oyunun menüsünde, ayarlarında ve gün sonu ekranında normal fiyatıyla satılır; bir reklamdan sonra daha düşük bir özel teklif fiyatıyla da sunulabilir. İkisi de tamamen aynı şeyi verir ve gördüğün her fiyat Google Play'in ülken için bildirdiği fiyattır. Satın alma tümüyle Google Play (Google Play Faturalandırma) tarafından işlenir: ödeme bilgilerin, adın, e-posta adresin veya posta adresin bize ulaşmaz ve saklanmaz. Oyun, reklam gösterip göstermeyeceğini bilmek için cihazındaki Google Play'e Google hesabının Premium'a sahip olup olmadığını sorar (oyun açılırken, oyuna döndüğünde, Premium ekranını açtığında ya da "Satın alımları geri yükle"ye dokunduğunda) ve Premium internetsiz de çalışsın diye cihazında yalnızca "Premium alındı" evet/hayır işaretini saklar. Google Play satın almanın artık bulunmadığını bildirirse (örneğin iade sonrası) bu işaret silinir. İade ve ödeme soruları Google Play tarafından yürütülür; Google satın almanı kendi gizlilik politikasına göre işler: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Premium aldıktan sonra Google'ın reklam yazılımı uygulamanın parçası olmaya devam eder, ama oyun artık reklam göstermez.</p>
+  <p><b>iPhone (App Store) sürümü:</b> Manzara'nın iPhone sürümünde şu anda reklam ve satın alma yoktur; reklam, analiz veya takip SDK'sı içermez, internet kullanmaz, reklam kimliğine erişmez ve seni takip etmez. Yukarıdaki reklam ve Premium bölümleri yalnızca Android sürümü içindir.</p>
+  <p>Oyun 13 yaş altındaki çocuklara yönelik değildir; çocuklardan bilerek kişisel bilgi toplamayız. İletişim: <a href="mailto:sefa.akg@gmail.com">sefa.akg@gmail.com</a></p>
   </div>
 </main>
 </body>
